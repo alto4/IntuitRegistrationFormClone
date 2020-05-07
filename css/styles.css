@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: .4rem;
+}
+
+.block span {
+    display: block;
+    color: #333;
+    margin: .5rem;
+    font-size: .8rem;
+}
+
+.forgot a {
+    color: #1ac;
+    text-decoration: none;
+}
+
+.form-header {
+    max-width: 380px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+
+.logo {
+    height: 2.2rem;
+    margin: 1.2rem;
+}
+
+.product-logos {
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    color: #fff;
+    background-color: #1ac;
+    outline: none;
+    border: 1px solid black;
+    padding: .6rem 1.3rem;
+    border-radius: .3em;
+    font-size: .9rem;
+}
+
+.btn-sign-in {
+    margin: .5rem 2rem .5rem .5rem;
+}
+
+.btn i {
+    padding-right: .5em;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92vh;
+}
+
+form {
+    min-width: 380px;
+    min-height: 65vh;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-top: none;
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em;
+}
+
+
+
+footer {
+    border: 1px solid red;
+}
