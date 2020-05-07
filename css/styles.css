@@ -9,6 +9,44 @@ body {
     background-color: #eee;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92vh;
+}
+
+.btn {
+    color: #fff;
+    background-color: #34c;
+    outline: none;
+    border: 1px solid black;
+    padding: .6rem 1.3rem;
+    border-radius: .3em;
+    font-size: .9rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-sign-in {
+    margin: .5rem 2rem .5rem .5rem;
+}
+
+.btn-create-account {
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn i {
+    padding-right: .5em;
+}
+
+/* Top Styles */
 .top {
     display: flex;
     justify-content: flex-end;
@@ -19,27 +57,33 @@ body {
 .block span {
     display: block;
     color: #333;
-    margin: .5rem;
+    margin: 0.2rem;
     font-size: .8rem;
 }
 
 .forgot a {
-    color: #1ac;
+    color: #34c;
     text-decoration: none;
 }
 
+/* Form Header Styles */
 .form-header {
-    max-width: 380px;
+    max-width: 400px;
     text-align: center;
     background-color: #fff;
-    border: 1px solid #888;
+    border: 1px solid #ccc;
     border-top-left-radius: .4em;
     border-top-right-radius: .4em;
+    margin-top: 1rem;
 }
 
 .logo {
     height: 2.2rem;
     margin: 1.2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .product-logos {
@@ -49,45 +93,111 @@ body {
     padding-bottom: 1rem;
 }
 
-.btn {
-    color: #fff;
-    background-color: #1ac;
-    outline: none;
-    border: 1px solid black;
-    padding: .6rem 1.3rem;
-    border-radius: .3em;
+/* Main Form Styles */
+form {
+    width: 380px;
+    min-height: 65vh;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    text-align: center;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+form h3 {
+    padding: 1.2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+form p {
+    padding: 0 2rem;
     font-size: .9rem;
 }
 
-.btn-sign-in {
-    margin: .5rem 2rem .5rem .5rem;
+form .learn-more,
+form .terms a {
+    font-size: .75rem;
+    text-decoration: none;
+    color: #34c;
 }
 
-.btn i {
-    padding-right: .5em;
+.form-controls {
+    padding: 2.2rem;
+}
+
+form label,
+form input {
+    display: block;
+    text-align: left;
+}
+
+form label {
+    font-size: .9rem;
+}
+
+form input {
+    margin: .5rem 0 2rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: .3em;
+    border: 1px solid #bbb;
+}
+
+.terms {
+    font-size: .75rem;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 3.3rem;
 }
 
 
-.container {
+/* Recaptcha Styles */
+.recaptcha {
+    background-color: #eee;
+    padding: 1.5rem 0;
+}
+
+.recaptcha p {
+    font-size: .65rem;
+}
+
+.recaptcha p a {
+    text-decoration: none;
+    color: #34c;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-size: .75rem;
+    padding-bottom: 1.5rem;
+}
+
+footer .footer-links {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 92vh;
+    list-style-type: none;
+    padding: .3rem;
 }
 
-form {
-    min-width: 380px;
-    min-height: 65vh;
-    background-color: #fff;
-    border: 1px solid #888;
-    border-top: none;
-    border-bottom-left-radius: .4em;
-    border-bottom-right-radius: .4em;
+footer .footer-link:hover {
+    text-decoration: underline;
 }
 
+footer a {
+    text-decoration: none;
+    padding: .7rem;
+    color: #333;
+}
 
-
-footer {
-    border: 1px solid red;
+footer .footer-text {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.5;
 }
